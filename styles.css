@@ -1,0 +1,282 @@
+body {
+    background-color: #FFFFFF;
+    font-family: 'Raleway';
+    font-size: 16px;
+    color:black;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 57px;
+    letter-spacing: -0.03em;
+    padding-bottom: 70px;
+}
+
+h2 {
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.container button {
+    width: 215px;
+    height: 56px;  
+    background: #0536FC;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align:center;
+    vertical-align: middle;
+    border: none;
+}
+
+header {
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.section-name {
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    color: #0536FC;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media all and (max-width: 768px) {
+    .flex-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+.logo {
+    display: flex;
+    padding-top: 29px;
+    gap: 10px;
+}
+
+.logo span {
+    opacity: 35%;
+}
+
+ul.menu li {
+    /* display: inline-block; */
+    padding: 20px 10px;
+}    
+
+ul .flex-wrap {
+    flex-wrap: wrap;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul.menu.flex-wrap li a, .lang a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#123123;
+}
+
+a img {
+    padding: 5px 10px;
+}
+
+.menu :hover {
+    color:#0536FC;
+}
+
+.lang :hover {
+    color:#0536FC;
+}
+
+.menu-button {
+    display: none;
+}
+
+.menu-button a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#123123;
+}
+
+@media all and (max-width: 1080px){
+    .menu-button {
+        display: block;
+    }
+
+    ul.menu {
+        display: none;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .container {
+        padding-bottom: 30px;
+    }
+}
+
+.programm {
+    display: flex;
+}
+
+.programm .container {
+    padding-top: 116px;
+    padding-bottom: 186px;
+    padding-left: 10%;
+}
+
+.programm-image {
+    background-image: url(images/programm-background.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 747.5px;
+    position: relative;
+}
+
+.programm-image img {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.goal {
+    display: flex;
+}
+
+.goal-image {
+    background-image: url(images/Goal-background.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 747.5px;
+}
+
+.goal h2 {
+    color: black;
+    padding-bottom: 70px;
+}
+
+.goal .container {
+    padding-top: 116px;
+    padding-bottom: 186px;
+    padding-left: 10%;
+    margin: 0px;
+}
+
+.goal .descr {
+    width: 320px;
+    overflow-wrap: break-word;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tech-intro {
+    background-image: url(images/tech-intro-background.jpeg);
+    background-size: cover;
+    position: relative;
+}
+
+.tech .intro-text {
+    padding-top: 150px;
+    padding-bottom: 250px;
+    padding-left: 10%;
+}
+
+.tech .intro-text p, h2 {
+    color:#FFFFFF;
+}
+
+.flex-wrap .process{
+    justify-content: baseline;
+    box-sizing: border-box;
+}
+
+.flex-item {
+    width: 25%;
+    height: auto;
+    position: relative;
+    padding-left: 3%;
+}
+
+.number {
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 70px;
+}
+
+.descr {
+    font-weight: 400;
+    padding-bottom: 100px;
+}
+
+.selection .descr {
+    width: 80%;
+    line-height: 24px;
+}
+
+.arrow img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 35px;
+    background-color: #FFFFFF;
+}
+
+.flex-wrap.process.container :hover {
+    background-color: #0536FC;
+    color:#FFFFFF;
+}
+
+@media all and (max-width: 768px) {
+    .flex-wrap.process.container{
+        gap: 0px;
+    }
+
+    .flex-item {
+        width: 80%;
+        height: auto;
+        position: relative;
+        padding: 10%;
+    }
+}
